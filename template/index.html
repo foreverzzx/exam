@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="../static/js/jquery-1.10.1.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+    
+  </body>
+  <script type="text/javascript">
+  	jQuery.ajax({
+  		url:'../1',
+  		type:'post',
+  		dataType:'json',
+  		success:function(response){
+  			console.log(response.message);
+  			//console.log(response.body.trans_result[0].dst);
+  		}
+  	});
+  </script>
+</html>
